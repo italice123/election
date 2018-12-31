@@ -1,6 +1,9 @@
 import { Component } from "@angular/core";
 
-@Component({})
+@Component({
+    selector: 'app-user',
+    template: `<router-outlet></router-outlet>`
+})
 
 export class Usercomponent{
     
