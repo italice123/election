@@ -16,7 +16,12 @@ module.exports = function() {
     })
   );
 
-  require("../services/routes/users.routes")(app);
+  // require("../services/routes/users.routes")(app);
+  // app.use(bodyParser.json());
+  // app.set("views", "./services/views");
+  // app.set("view engine", "ejs");
+
+  require("../services/routes/userloging.routes")(app);
   app.use(bodyParser.json());
   app.set("views", "./services/views");
   app.set("view engine", "ejs");

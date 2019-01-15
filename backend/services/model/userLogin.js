@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 var mysql = require('mysql');
 const db = require('../../config/db');
 var bcrypt = require('bcryptjs');
-const { getToken , verifyToken } = require('');
+// const { getToken , verifyToken } = require('');
 
 function register(json) {
     console.log(req.body);
@@ -28,6 +28,7 @@ function register(json) {
             console.log("record inserted")
         }
     });
+    return finalResult;
 }
 
 

@@ -1,4 +1,4 @@
-const register = require("../model/userLogin").register();
+const register = require("../model/userLogin").register;
 
 
 exports.register = (req, res) =>{
