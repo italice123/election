@@ -4,14 +4,22 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from '../admin/login/login.component';
 
 
+
 const adminRoutes: Routes = [
-  { path:'login', component:LoginComponent },
-  { path:'', component:LoginComponent }
+  { path: 'login', component: LoginComponent },
+
+  {
+    path: 'home',
+    loadChildren: './home/home.module#HomeModule'
+  },
+
+
+  { path: '', component: LoginComponent }
 ]
 
 @NgModule({
-  imports: [ RouterModule.forChild(adminRoutes) ],
-  exports: [ RouterModule ],
+  imports: [RouterModule.forChild(adminRoutes)],
+  exports: [RouterModule],
   declarations: []
 })
 export class AdminRoutingModule { }
