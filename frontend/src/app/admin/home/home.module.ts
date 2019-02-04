@@ -5,6 +5,8 @@ import { HomeComponent } from './home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { PartyComponent } from './party/party.component';
+import { PersonalComponent } from './personal/personal.component';
 
 @NgModule({
   imports: [
@@ -15,7 +17,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    PartyComponent,
+    PersonalComponent
   ]
 })
 export class HomeModule { }
